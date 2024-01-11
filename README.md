@@ -1,0 +1,2 @@
+# HostStaticWebsiteOnS3
+HostStaticWebsiteOnS3
