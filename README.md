@@ -49,16 +49,8 @@ AWS Steps:  <br/>
 <img src="https://i.imgur.com/jSWMZzH.jpg" height="80%" width="80%" alt="Create S3 Bucket"/>
 <br />
 <br />
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+Open Aws ans Search S3
+
 </p>
 
 <!--
