@@ -20,7 +20,7 @@ Project consists of hosting a static website on AWS S3.
 
 <p align="center">
 Canva Steps: <br/>
-<img src="https://imgur.com/a/9RvghI6" height="80%" width="80%" alt="Canva Steps"/>
+<img src="[[https://imgur.com/a/9RvghI6](https://i.imgur.com/vtJTBRd.jpg)](https://imgur.com/a/SgdOF0d)" height="80%" width="80%" alt="Canva Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
