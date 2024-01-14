@@ -46,10 +46,17 @@ Canva Steps: <br/>
 <br />
 <br />
 AWS Steps:  <br/>
+Open AWS, search for S3 and press enter
+Click "Create Bucket"
+Change "Bucket name" to "studiowebsite"
+Uncheck “Block all public access” to allow public access and then check “I acknowledge”
+Scroll down and click “Create bucket”
+Upload the downloaded “index.html” file into the bucket
+
 <img src="https://i.imgur.com/jSWMZzH.jpg" height="80%" width="80%" alt="Create S3 Bucket"/>
 <br />
 <br />
-Open Aws ans Search S3
+Open AWS, search for S3 and press enter
 
 </p>
 
