@@ -78,6 +78,8 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>cc. Click "Policy generator</b>
 
+<img src="https://i.imgur.com/IRv4BS5.png" height="40%" width="40%" alt="Policy generator"/>
+
 - <b>13. In the “Type of Policy” section select “S3 Bucket Policy”</b>
 
   <img src="https://i.imgur.com/yp8jKpi.png" height="40%" width="40%" alt="S3 Bucket Policy"/>
@@ -110,9 +112,16 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>22. Click on “index.html”</b>
 
+<img src="https://i.imgur.com/5B0Z1sB.png" height="40%" width="40%" alt="Click on the indeh.html "/>
+
 - <b>23. Click on the “Object URL” link to access your recording studio website.</b>
 
-  <img src="https://i.imgur.com/yp8jKpi.png" height="40%" width="40%" alt="Change "S3 Bucket Policy"/>
+<img src="https://i.imgur.com/XPInyVm.png" height="40%" width="40%" alt="Click on the Object URL "/>
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="All Done"/>
+
+
+
 
 <br />
 <br />
