@@ -30,7 +30,7 @@ Project consists of hosting a static website on AWS S3.
 <h2>Program walk-through:</h2>
 
 
-- <b>1. Create a design you would want to be your landing page (I provided a recording studio landing page)</b>
+- <b>1. On Canva create a design you would want to be your landing page (I provided a recording studio landing page)</b>
 - <b>2. After you are done with your image click SHARE (in the top right hand corner) and click EMBED</b>
 - <b>3. Copy HTML embedded code.</b>
 - <b>4. Open AWS, search for S3 and press enter</b>
