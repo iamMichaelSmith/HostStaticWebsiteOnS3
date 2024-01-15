@@ -57,7 +57,7 @@ Project consists of hosting a static website on AWS S3.
 - <b>22. Click on “index.html”</b>
 - <b>23. Click on the “Object URL” link to access your recording studio website.</b>
 
-<img src="https://i.imgur.com/jSWMZzH.jpg" height="80%" width="80%" alt="Create S3 Bucket"/>
+<img src="https://i.imgur.com/jSWMZzH.jpg" height="80%" width="80%" alt="Enable Static Website Hosting"/>
 <br />
 <br />
 
