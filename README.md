@@ -1,6 +1,17 @@
 <h1>Hosting a Static Website using AWS S3</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+<h2>Description</h2>
+Project consists of hosting a static website on AWS S3.
+<br />
+
+<h2>Languages and Utilities Used</h2>
+
+- <b>Amazon S3</b>
+- <b>Canva</b>
+
+<h2>Environments Used </h2>
+
+- <b>Windows 10</b> 
 
 <h2>Description</h2>
 Project consists of hosting a static website on AWS S3.
@@ -18,45 +29,37 @@ Project consists of hosting a static website on AWS S3.
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
-Canva Steps: <br/>
-<img src="<h1>Hosting a Static Website using AWS S3</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
-<h2>Description</h2>
-Project consists of hosting a static website on AWS S3.
-<br />
-
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>Amazon S3</b>
-- <b>Canva</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> 
-
-<h2>Program walk-through:</h2>
-
-<p align="center">
-Canva Steps: <br/>
-<img src="https://i.imgur.com/vtJTBRd.jpg" height="80%" width="80%" alt="Canva Steps"/>
-<br />
-<br />
-AWS Steps:  <br/>
-<b>Open AWS, search for S3 and press enter</b>
-<b>Click "Create Bucket"</b>
-<b>Change "Bucket name" to "studiowebsite"</b>
-<b>Uncheck “Block all public access” to allow public access and then check “I acknowledge”</b>
-<b>Scroll down and click “Create bucket”</b>
-<b>Upload the downloaded “index.html” file into the bucket</b>
+- <b>1. Create a design you would want to be your landing page (I provided a recording studio landing page)</b>
+- <b>2. After you are done with your image click SHARE (in the top right hand corner) and click EMBED</b>
+- <b>3. Copy HTML embedded code.</b>
+- <b>4. Open AWS, search for S3 and press enter</b>
+- <b>5. Click “Create bucket”</b>
+- <b>6. Change "Bucket name" to "studiowebsite"</b>
+- <b>7. Uncheck “Block all public access” to allow public access and then check “I acknowledge”</b>
+- <b>8. Scroll down and click “Create bucket”</b>
+- <b>9. Upload the downloaded “index.html” file into the bucket</b>
+- <b>10. Click on the bucket name “studiowebsite” and click “Properties”</b>
+- <b>11. Scroll down and in the “Static website hosting” section click edit and “Enable” Static website hosting</b>
+- <b>aa. In the "index document" section type in, index.html</b>
+- <b>bb. Click "Save change"</b>
+- <b>12. Click on “Permissions”. In the “Bucket policy” section click “Edit”</b>
+- <b>cc. Click "Policy generator</b>
+- <b>13. In the “Type of Policy” section select “S3 Bucket Policy”</b>
+- <b>14. In the “Principal” section type “*”</b>
+- <b>15. Under “Actions”, scroll to “GetObject” and select it</b>
+- <b>16. In the Amazon Resoarce Name (ARN) section, go back to the previous page and copy the S3 ARN then paste it in the section.</b>
+- <b>17. Click Add Statement and then click “Policy Generator” </b>
+- <b>18. Copy code and paste it into your “Bucket policy”</b>
+- <b>19. On the “Resoarce” line, add a “ /* “ after arn:aws:s3:::studiowebsite (It should look like arn:aws:s3:::studiowebsite/*)</b>
+- <b>20. Click "Save change"</b>
+- <b>21. Go back to “S3” and click on the “studiowebsite” bucket</b>
+- <b>22. Click on “index.html”</b>
+- <b>23. Click on the “Object URL” link to access your recording studio website.</b>
 
 <img src="https://i.imgur.com/jSWMZzH.jpg" height="80%" width="80%" alt="Create S3 Bucket"/>
 <br />
 <br />
-Open AWS, search for S3 and press enter
 
 </p>
 
@@ -69,4 +72,3 @@ Open AWS, search for S3 and press enter
 @@ text in purple (and bold)@@
 ```
 --!>
- 
