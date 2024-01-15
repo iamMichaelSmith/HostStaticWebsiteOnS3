@@ -32,9 +32,15 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>1. On Canva create a design you would want to be your landing page (I provided a recording studio landing page)</b>
 
+<img src="https://i.imgur.com/0kjDMhf.png" height="50%" width="50%" alt="Create a design on Canva"/>
+
 - <b>2. After you are done with your image click SHARE (in the top right hand corner) and click EMBED</b>
 
+<img src="https://i.imgur.com/VS8BhIc.png" height="50%" width="50%" alt="Click Share"/>
+
 - <b>3. Copy HTML embedded code.</b>
+
+<img src="https://i.imgur.com/9RVt3lg.png" height="50%" width="50%" alt="Copy embedded code"/>
 
 - <b>4. Open AWS, search for S3 and press enter</b>
 
@@ -68,65 +74,67 @@ Project consists of hosting a static website on AWS S3.
 
   <img src="https://i.imgur.com/p7fdDkU.png" height="40%" width="40%" alt="Enable Static Website Hosting"/>
   
-- <b>aa. In the "index document" section type in, index.html</b>
+- <b>12. In the "index document" section type in, index.html</b>
 
 <img src="https://i.imgur.com/gQaC3rh.png" height="40%" width="40%" alt="Type index.html"/>
 
-- <b>bb. Click "Save change"</b>
+- <b>13. Click "Save change"</b>
 
 <img src="https://i.imgur.com/I9Cmavk.png" height="40%" width="40%" alt="Save Change"/>
 
-- <b>12. Click on “Permissions”. In the “Bucket policy” section click “Edit”</b>
+- <b>14. Click on “Permissions”. In the “Bucket policy” section click “Edit”</b>
 
 <img src="https://i.imgur.com/3uAwvtn.png" height="40%" width="40%" alt="Click Edit"/>
 
-- <b>cc. Click "Policy generator</b>
+- <b>15. Click "Policy generator</b>
 
 <img src="https://i.imgur.com/IRv4BS5.png" height="40%" width="40%" alt="Policy generator"/>
 
-- <b>13. In the “Type of Policy” section select “S3 Bucket Policy”</b>
+- <b>16. In the “Type of Policy” section select “S3 Bucket Policy”</b>
 
   <img src="https://i.imgur.com/yp8jKpi.png" height="40%" width="40%" alt="S3 Bucket Policy"/>
   
-- <b>14. In the “Principal” section type “*”</b>
+- <b>17. In the “Principal” section type “*”</b>
 
   <img src="https://i.imgur.com/nZYYESz.png" height="40%" width="40%" alt="Wildcard"/>
   
-- <b>15. Under “Actions”, scroll to “GetObject” and select it</b>
+- <b>18. Under “Actions”, scroll to “GetObject” and select it</b>
 
   <img src="https://i.imgur.com/Y4cSC7Y.png" height="40%" width="40%" alt="S3 GetObject"/> 
 
-- <b>16. In the Amazon Resoarce Name (ARN) section, go back to the previous page and copy the S3 ARN then paste it in the section.</b>
+- <b>19. In the Amazon Resoarce Name (ARN) section, go back to the previous page and copy the S3 ARN then paste it in the section.</b>
 
 <img src="https://i.imgur.com/pzWxAM1.png" height="40%" width="40%" alt="Copy ARN Number"/>
 
-- <b>17. Click Add Statement and then click “Policy Generator” </b>
+- <b>20. Click Add Statement and then click “Policy Generator” </b>
 
   <img src="https://i.imgur.com/XEo9jP3.png" height="40%" width="40%" alt="Policy Generator"/> 
 
-- <b>18. Copy code and paste it into your “Bucket policy”</b>
+- <b>21. Copy code and paste it into your “Bucket policy”</b>
 
   <img src="https://i.imgur.com/jn3HnC6.png" height="40%" width="40%" alt="Copy Code"/> 
 
-- <b>19. On the “Resoarce” line, add a “ /* “ after arn:aws:s3:::studiowebsite (It should look like arn:aws:s3:::studiowebsite/*)</b>
+- <b>22. On the “Resoarce” line, add a “ /* “ after arn:aws:s3:::studiowebsite (It should look like arn:aws:s3:::studiowebsite/*)</b>
 
  <img src="https://i.imgur.com/wuswu7Q.png" height="40%" width="40%" alt="Add /*"/>
 
-- <b>20. Click "Save change"</b>
+- <b>23. Click "Save change"</b>
 
 <img src="https://i.imgur.com/8iBGlR1.png" height="40%" width="40%" alt="Save change"/>
 
-- <b>21. Go back to “S3” and click on the “studiowebsite” bucket</b>
+- <b>24. Go back to “S3” and click on the “studiowebsite” bucket</b>
 
 <img src="https://i.imgur.com/8Nj9vjO.png" height="40%" width="40%" alt="studiowebsite "/>
 
-- <b>22. Click on “index.html”</b>
+- <b>25. Click on “index.html”</b>
 
 <img src="https://i.imgur.com/5B0Z1sB.png" height="40%" width="40%" alt="Click on the indeh.html "/>
 
-- <b>23. Click on the “Object URL” link to access your recording studio website.</b>
+- <b>26. Click on the “Object URL” link to access your recording studio website.</b>
 
 <img src="https://i.imgur.com/XPInyVm.png" height="40%" width="40%" alt="Click on the Object URL "/>
+
+- <b> All DONE!</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="All Done"/>
 
