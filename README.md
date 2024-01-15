@@ -58,6 +58,8 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>9. Upload the downloaded “index.html” file into the bucket</b>
 
+<img src="https://i.imgur.com/02O8EfC.png" height="40%" width="40%" alt="Upload index.html"/>
+
 - <b>10. Click on the bucket name “studiowebsite” and click “Properties”</b>
 
 - <b>11. Scroll down and in the “Static website hosting” section click edit and “Enable” Static website hosting</b>
@@ -66,7 +68,11 @@ Project consists of hosting a static website on AWS S3.
   
 - <b>aa. In the "index document" section type in, index.html</b>
 
+<img src="https://i.imgur.com/gQaC3rh.png" height="40%" width="40%" alt="Type index.html"/>
+
 - <b>bb. Click "Save change"</b>
+
+<img src="https://i.imgur.com/I9Cmavk.png" height="40%" width="40%" alt="Save Change"/>
 
 - <b>12. Click on “Permissions”. In the “Bucket policy” section click “Edit”</b>
 
