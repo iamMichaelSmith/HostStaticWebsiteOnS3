@@ -42,13 +42,19 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>5. Click “Create bucket”</b>
 
+<img src="https://i.imgur.com/AgiaGfq.png" height="40%" width="40%" alt="Create bucket"/>
+
 - <b>6. Change "Bucket name" to "studiowebsite"</b>
 
  <img src="https://i.imgur.com/jSWMZzH.jpg" height="40%" width="40%" alt="Change Bucket name to studiowebsite"/>
   
 - <b>7. Uncheck “Block all public access” to allow public access and then check “I acknowledge”</b>
 
+<img src="https://i.imgur.com/bpCtDUu.png" height="40%" width="40%" alt="Uncheck Block Public Access"/>
+
 - <b>8. Scroll down and click “Create bucket”</b>
+
+<img src="https://i.imgur.com/0achovu.png" height="40%" width="40%" alt="Create bucket"/>
 
 - <b>9. Upload the downloaded “index.html” file into the bucket</b>
 
