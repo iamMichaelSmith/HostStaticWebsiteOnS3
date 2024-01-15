@@ -36,11 +36,13 @@ Project consists of hosting a static website on AWS S3.
 - <b>4. Open AWS, search for S3 and press enter</b>
 - <b>5. Click “Create bucket”</b>
 - <b>6. Change "Bucket name" to "studiowebsite"</b>
+  <img src="https://i.imgur.com/jSWMZzH.jpg" height="40%" width="40%" alt="Change Bucket name to studiowebsite"/>
 - <b>7. Uncheck “Block all public access” to allow public access and then check “I acknowledge”</b>
 - <b>8. Scroll down and click “Create bucket”</b>
 - <b>9. Upload the downloaded “index.html” file into the bucket</b>
 - <b>10. Click on the bucket name “studiowebsite” and click “Properties”</b>
 - <b>11. Scroll down and in the “Static website hosting” section click edit and “Enable” Static website hosting</b>
+  <img src="https://i.imgur.com/p7fdDkU.png" height="40%" width="40%" alt="Enable Static Website Hosting"/>
 - <b>aa. In the "index document" section type in, index.html</b>
 - <b>bb. Click "Save change"</b>
 - <b>12. Click on “Permissions”. In the “Bucket policy” section click “Edit”</b>
@@ -57,7 +59,8 @@ Project consists of hosting a static website on AWS S3.
 - <b>22. Click on “index.html”</b>
 - <b>23. Click on the “Object URL” link to access your recording studio website.</b>
 
-<img src="https://i.imgur.com/jSWMZzH.jpg" height="80%" width="80%" alt="Enable Static Website Hosting"/>
+<img src="https://i.imgur.com/qOngTS7.jpg" height="80%" width="80%" alt="Change "Bucket name" to "studiowebsite"/>
+
 <br />
 <br />
 
