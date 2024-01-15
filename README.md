@@ -38,6 +38,8 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>4. Open AWS, search for S3 and press enter</b>
 
+<img src="https://i.imgur.com/DOCwi8o.png" height="40%" width="40%" alt="Search S3"/>
+
 - <b>5. Click “Create bucket”</b>
 
 - <b>6. Change "Bucket name" to "studiowebsite"</b>
