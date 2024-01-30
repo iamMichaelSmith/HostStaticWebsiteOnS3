@@ -158,12 +158,26 @@ This realization came as a pivotal learning moment. Now, equipped with this know
 
 
 <b>In create record, leave record name empty. In "Record type" leave it on "A-Routes traffic to an IPV4 address and some AWS resources". Enable the "Alias" checkbox to allow forwarding. Route traffic to "Alias to S3 website endpoint" and choose your region both S3 buckets are in. In the "Enter S3 endpoint" dropdown, you should see your bucket name and domain that does not have the www. Click Create Records.</b>
+
+
 <b>Duplicate the previous step but input "www" in the Record name as a subdomain. You should have 2 new records for your domain.</b>
+
+
 <b>Test the domain by going to your browser and typing in YOURWEBSITE.com and WWW.YOURWEBSITE.COM to make sure it works.</b>
+
+
 <b>Story Time: Go to certificate manager and get your website credentials to ensure your site is secure.</b>
+
+
 <b>Search "Certificate Manager" in the AWS search bar and select it. Select "Request". Keep Certificate type at "Request a public certificate" and click "Next".</b>
+
+
 <b>In the "Fully qualified domain name box input your "YOURWEBSITE.COM". Click "Add another name to this certificate" and input "*.YOURWEBSITE.COM" the *. allows you to get a certificate for a subdomain (ex:www.YOURWEBSITE.com). Click Request.</b>
+
+
 <b>On the certificates page, click on the certificate that has the www subdomain. Click on "Create records in Route 53". This will create a record set in Route 53.</b>
+
+
 <b>On the "Create DNS records in Amazon Route 53" page, you should see "Success" in the "Validation status". (If you don't see your certificates, then you need to clear the filter).</b>
 
 
