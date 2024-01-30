@@ -1,22 +1,27 @@
 <h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager</h1>
 
-<h2>Description</h2>
-Project consists of hosting a static website on AWS S3. We will register and forward a domain name via Route 53.We will then secure the website using AWS Certificate Manager.
+<h2>Project Overview</h2>
+This project demonstrates the process of hosting a static website on Amazon Web Services (AWS) using three key services: Amazon S3 (Simple Storage Service), Amazon Route 53, and AWS Certificate Manager. The goal of this project is to provide a hands-on experience in deploying a secure and scalable static website on the AWS platform.
 <br />
 
-<h2>Languages and Utilities Used</h2>
+<h2>Key Components</h2>
 
-- <b>Amazon S3</b>
-- <b>Route 53</b>
-- </b>Certificate Manager</b>
-- <b>Canva</b>
+- <b>Amazon S3 for Hosting: Utilizing Amazon S3, we host the static website content, including HTML, CSS, and JavaScript files. Amazon S3 offers a reliable and cost-effective solution for storing website content with high availability and scalability.</b>
 
-<h2>Environments Used </h2>
+- <b>Amazon Route 53 for Domain Management: We use Amazon Route 53 for domain name registration and forwarding. Route 53 serves as a scalable and highly available Domain Name System (DNS) web service, facilitating efficient domain management and routing of end-user requests to the Amazon S3 hosted website.</b>
 
-- <b>Windows 10</b> 
+- </b>CAWS Certificate Manager for Security: To ensure the security of our website, we utilize AWS Certificate Manager for SSL/TLS certificate management. This service allows us to easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services, thereby enabling secure connections to our website.</b>
+  
 
-<h2>Description</h2>
-Project consists of hosting a static website on AWS S3.
+<h2>Project Goals</h2>
+
+- <b>Easy and Reliable Website Hosting: Demonstrate how to host a static website on Amazon S3 with high reliability and minimal configuration.</b>
+
+- <b>Domain Registration and Management: Showcase the process of domain name registration and DNS management using Amazon Route 53.</b>
+
+- <b>Enhancing Website Security: Implement SSL/TLS encryption for the website using AWS Certificate Manager, ensuring secure communication and data protection.</b> 
+
+
 
 <br>
 
