@@ -1,4 +1,4 @@
-<h1>Hosting a Static Website using AWS S3</h1>
+<h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager</h1>
 
 <h2>Description</h2>
 Project consists of hosting a static website on AWS S3.
@@ -7,6 +7,8 @@ Project consists of hosting a static website on AWS S3.
 <h2>Languages and Utilities Used</h2>
 
 - <b>Amazon S3</b>
+- <b>Route 53</b>
+- </b>Certificate Manager</b>
 - <b>Canva</b>
 
 <h2>Environments Used </h2>
@@ -17,15 +19,6 @@ Project consists of hosting a static website on AWS S3.
 Project consists of hosting a static website on AWS S3.
 <br />
 
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>Amazon S3</b>
-- <b>Canva</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> 
 
 <h2>Program walk-through:</h2>
 
@@ -47,11 +40,14 @@ Project consists of hosting a static website on AWS S3.
 <img src="https://i.imgur.com/DOCwi8o.png" height="40%" width="40%" alt="Search S3"/>
 
 - <b>5. Click “Create bucket”</b>
--<b>5a. DISCLAIMER: Before you create a bucket be sure to go to Route 53 and check if your domain name is available!!! You will be repeating this step twice. One for (www .YOURDOMAIN.com) and one for (YOURDOMAIN.com). For my scenario im using Studiowebsite but if you are creating a new project for yourself make sure to us use your domain name as the bucket name.</b>
+
+- <b>5b. DISCLAIMER: Before you create a bucket be sure to go to Route 53 and check if your domain name is available!!! You will be repeating this step twice. One for (www .YOURDOMAIN.com) and one for (YOURDOMAIN.com). For my scenario im using Studiowebsite but if you are creating a new project for yourself make sure to us use your domain name as the bucket name.</b>
 
 <img src="https://i.imgur.com/AgiaGfq.png" height="40%" width="40%" alt="Create bucket"/>
 
-- <b>6. Change "Bucket name" to "studiowebsite"</b>
+- <b>6. Change "Bucket name" to "YOURDOMAIN" and don't use www in front.</b>
+
+- <b>6b. DisCLAIMER: In my project I used "studiowebsite" when I should have used "studiowebsite.com" if that was going to be the name of my website Im trying to host in S3. Be sure to make the bucket the correct domain name that you are planning on using for your website! 
 
  <img src="https://i.imgur.com/jSWMZzH.jpg" height="40%" width="40%" alt="Change Bucket name to studiowebsite"/>
   
@@ -135,9 +131,12 @@ Project consists of hosting a static website on AWS S3.
 
 <img src="https://i.imgur.com/XPInyVm.png" height="40%" width="40%" alt="Click on the Object URL "/>
 
-- <b> Check out the Site</b>
+- <b>27. Check out the Site</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="All Done"/>
+
+- <b>28. We will need to repeat steps 5-27 again but change the NEW bucket name to www.YOURWEBSITE.com. You should end up with two identical S3 buckets pertaining the index.Html file with the exception of the bucket names. One has www followed by your website domain.com and one s3 bucket with just your domain.com.
+
 
 <h2>Story Time</h2>
 <b>During the course of this project, I embarked on a journey to enhance the S3 Bucket-hosted website by linking it to a domain name I had registered earlier through Route 53. This endeavor led me to make some adjustments in my setup that, in hindsight, would have been beneficial to implement from the start, especially with the plan to use Route 53 as a DNS service.
@@ -148,37 +147,37 @@ Create Dual S3 Buckets: My approach would have been to establish two S3 buckets,
 This realization came as a pivotal learning moment. Now, equipped with this knowledge, I'm able to more efficiently architect and deploy AWS services in my infrastructure.</b>
 
 
-<b>Search for route 53 in the search bar and select get started.</b>
+<b>29. Search for route 53 in the AWS search bar and select get started.</b>
 
 
-<b>Register a new domain (choose a domain that you want and select if you want the domain to renew yearly. Keep in mind that it can take from a few minutes to 72 hours for your domain to become available).</b>
+<b>30. Register a new domain (choose a domain that you want and select if you want the domain to renew yearly. Keep in mind that it can take from a few minutes to 72 hours for your domain to become available).</b>
 
 
-<b>After registering your domain name in route 53, head over to the left pane and click hosted domains. Click on the domain name and click create record.</b>
+<b>31. After registering your domain name in route 53, head over to the left pane and click hosted domains. Click on the domain name and click create record.</b>
 
 
-<b>In create record, leave record name empty. In "Record type" leave it on "A-Routes traffic to an IPV4 address and some AWS resources". Enable the "Alias" checkbox to allow forwarding. Route traffic to "Alias to S3 website endpoint" and choose your region both S3 buckets are in. In the "Enter S3 endpoint" dropdown, you should see your bucket name and domain that does not have the www. Click Create Records.</b>
+<b>32. In create record, leave record name empty. In "Record type" leave it on "A-Routes traffic to an IPV4 address and some AWS resources". Enable the "Alias" checkbox to allow forwarding. Route traffic to "Alias to S3 website endpoint" and choose your region both S3 buckets are in. In the "Enter S3 endpoint" dropdown, you should see your bucket name and domain that does not have the www. Click Create Records.</b>
 
 
-<b>Duplicate the previous step but input "www" in the Record name as a subdomain. You should have 2 new records for your domain.</b>
+<b>33. Duplicate the previous step but input "www" in the Record name as a subdomain. You should have 2 new records for your domain.</b>
 
 
-<b>Test the domain by going to your browser and typing in YOURWEBSITE.com and WWW.YOURWEBSITE.COM to make sure it works.</b>
+<b>34. Test the domain by going to your browser and typing in YOURWEBSITE.com and WWW.YOURWEBSITE.COM to make sure it works.</b>
 
 
-<b>Story Time: Go to certificate manager and get your website credentials to ensure your site is secure.</b>
+<b>35. Story Time: Go to certificate manager and get your website credentials to ensure your site is secure.</b>
 
 
-<b>Search "Certificate Manager" in the AWS search bar and select it. Select "Request". Keep Certificate type at "Request a public certificate" and click "Next".</b>
+<b>36. Search "Certificate Manager" in the AWS search bar and select it. Select "Request". Keep Certificate type at "Request a public certificate" and click "Next".</b>
 
 
-<b>In the "Fully qualified domain name box input your "YOURWEBSITE.COM". Click "Add another name to this certificate" and input "*.YOURWEBSITE.COM" the *. allows you to get a certificate for a subdomain (ex:www.YOURWEBSITE.com). Click Request.</b>
+<b>37. In the "Fully qualified domain name box input your "YOURWEBSITE.COM". Click "Add another name to this certificate" and input "*.YOURWEBSITE.COM" the *. allows you to get a certificate for a subdomain (ex:www.YOURWEBSITE.com). Click Request.</b>
 
 
-<b>On the certificates page, click on the certificate that has the www subdomain. Click on "Create records in Route 53". This will create a record set in Route 53.</b>
+<b>38. On the certificates page, click on the certificate that has the www subdomain. Click on "Create records in Route 53". This will create a record set in Route 53.</b>
 
 
-<b>On the "Create DNS records in Amazon Route 53" page, you should see "Success" in the "Validation status". (If you don't see your certificates, then you need to clear the filter).</b>
+<b>39. On the "Create DNS records in Amazon Route 53" page, you should see "Success" in the "Validation status". (If you don't see your certificates, then you need to clear the filter).</b>
 
 
 
