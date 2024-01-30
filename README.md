@@ -11,6 +11,10 @@ This project demonstrates the process of hosting a static website on Amazon Web 
 - <b>Amazon Route 53 for Domain Management: We use Amazon Route 53 for domain name registration and forwarding. Route 53 serves as a scalable and highly available Domain Name System (DNS) web service, facilitating efficient domain management and routing of end-user requests to the Amazon S3 hosted website.</b>
 
 - </b>CAWS Certificate Manager for Security: To ensure the security of our website, we utilize AWS Certificate Manager for SSL/TLS certificate management. This service allows us to easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services, thereby enabling secure connections to our website.</b>
+
+<h2>Integration with Canva for Design Elements</h2>
+<b>In addition to leveraging AWS services, this project also integrates with Canva, a popular online design tool, to enhance the visual appeal and user experience of our static website. By using Canva, we can easily create and customize high-quality graphics, banners, and other visual elements without the need for advanced graphic design skills. This integration highlights the project's emphasis on not only technical functionality but also on aesthetic presentation.
+</b>
   
 
 <h2>Project Goals</h2>
