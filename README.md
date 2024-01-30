@@ -47,6 +47,7 @@ Project consists of hosting a static website on AWS S3.
 <img src="https://i.imgur.com/DOCwi8o.png" height="40%" width="40%" alt="Search S3"/>
 
 - <b>5. Click “Create bucket”</b>
+-<b>5a. DISCLAIMER: Before you create a bucket be sure to go to Route 53 and check if your domain name is available!!! You will be repeating this step twice. One for (www .YOURDOMAIN.com) and one for (YOURDOMAIN.com). For my scenario im using Studiowebsite but if you are creating a new project for yourself make sure to us use your domain name as the bucket name.</b>
 
 <img src="https://i.imgur.com/AgiaGfq.png" height="40%" width="40%" alt="Create bucket"/>
 
@@ -134,9 +135,11 @@ Project consists of hosting a static website on AWS S3.
 
 <img src="https://i.imgur.com/XPInyVm.png" height="40%" width="40%" alt="Click on the Object URL "/>
 
-- <b> All DONE!</b>
+- <b> Check out the Site</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="All Done"/>
+
+
 
 
 
