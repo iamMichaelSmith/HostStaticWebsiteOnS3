@@ -26,6 +26,9 @@ This project demonstrates the process of hosting a static website on Amazon Web 
 - <b>Enhancing Website Security: Implement SSL/TLS encryption for the website using AWS Certificate Manager, ensuring secure communication and data protection.</b> 
 
 
+<h2>How to Use This Repository</h2>
+This repository contains all the necessary resources and step-by-step guides to successfully complete this project. Follow the instructions in each section to set up your static website, register and manage your domain, and secure your website.
+
 
 <br>
 
