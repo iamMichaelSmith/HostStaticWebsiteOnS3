@@ -49,7 +49,7 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>6b. DisCLAIMER: In my project I used "studiowebsite" when I should have used "studiowebsite.com" if that was going to be the name of my website Im trying to host in S3. Be sure to make the bucket the correct domain name that you are planning on using for your website! 
 
- <img src="https://i.imgur.com/jSWMZzH.jpg" height="40%" width="40%" alt="Change Bucket name to studiowebsite"/>
+<img src="https://i.imgur.com/jSWMZzH.jpg" height="40%" width="40%" alt="Change Bucket name to studiowebsite"/>
   
 - <b>7. Uncheck “Block all public access” to allow public access and then check “I acknowledge”</b>
 
@@ -69,7 +69,7 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>11. Scroll down and in the “Static website hosting” section click edit and “Enable” Static website hosting</b>
 
-  <img src="https://i.imgur.com/p7fdDkU.png" height="40%" width="40%" alt="Enable Static Website Hosting"/>
+<img src="https://i.imgur.com/p7fdDkU.png" height="40%" width="40%" alt="Enable Static Website Hosting"/>
   
 - <b>12. In the "index document" section type in, index.html</b>
 
@@ -89,15 +89,15 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>16. In the “Type of Policy” section select “S3 Bucket Policy”</b>
 
-  <img src="https://i.imgur.com/yp8jKpi.png" height="40%" width="40%" alt="S3 Bucket Policy"/>
+<img src="https://i.imgur.com/yp8jKpi.png" height="40%" width="40%" alt="S3 Bucket Policy"/>
   
 - <b>17. In the “Principal” section type “*”</b>
 
-  <img src="https://i.imgur.com/nZYYESz.png" height="40%" width="40%" alt="Wildcard"/>
+<img src="https://i.imgur.com/nZYYESz.png" height="40%" width="40%" alt="Wildcard"/>
   
 - <b>18. Under “Actions”, scroll to “GetObject” and select it</b>
 
-  <img src="https://i.imgur.com/Y4cSC7Y.png" height="40%" width="40%" alt="S3 GetObject"/> 
+<img src="https://i.imgur.com/Y4cSC7Y.png" height="40%" width="40%" alt="S3 GetObject"/> 
 
 - <b>19. In the Amazon Resoarce Name (ARN) section, go back to the previous page and copy the S3 ARN then paste it in the section.</b>
 
@@ -105,15 +105,15 @@ Project consists of hosting a static website on AWS S3.
 
 - <b>20. Click Add Statement and then click “Policy Generator” </b>
 
-  <img src="https://i.imgur.com/XEo9jP3.png" height="40%" width="40%" alt="Policy Generator"/> 
+<img src="https://i.imgur.com/XEo9jP3.png" height="40%" width="40%" alt="Policy Generator"/> 
 
 - <b>21. Copy code and paste it into your “Bucket policy”</b>
 
-  <img src="https://i.imgur.com/jn3HnC6.png" height="40%" width="40%" alt="Copy Code"/> 
+<img src="https://i.imgur.com/jn3HnC6.png" height="40%" width="40%" alt="Copy Code"/> 
 
 - <b>22. On the “Resoarce” line, add a “ /* “ after arn:aws:s3:::studiowebsite (It should look like arn:aws:s3:::studiowebsite/*)</b>
 
- <img src="https://i.imgur.com/wuswu7Q.png" height="40%" width="40%" alt="Add /*"/>
+<img src="https://i.imgur.com/wuswu7Q.png" height="40%" width="40%" alt="Add /*"/>
 
 - <b>23. Click "Save change"</b>
 
