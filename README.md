@@ -1,7 +1,7 @@
 <h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager</h1>
 
 <h2>Description</h2>
-Project consists of hosting a static website on AWS S3.
+Project consists of hosting a static website on AWS S3. We will register and forward a domain name via Route 53 and secure the website using AWS Certificate Manager.
 <br />
 
 <h2>Languages and Utilities Used</h2>
