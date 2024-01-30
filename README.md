@@ -159,7 +159,7 @@ Project consists of hosting a static website on AWS S3.
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="All Done"/>
 <br>
 
-- <b>28. We will need to repeat steps 5-27 again but change the NEW bucket name to www.YOURWEBSITE.com. You should end up with two identical S3 buckets pertaining the index.Html file with the exception of the bucket names. One has www followed by your website domain.com and one s3 bucket with just your domain.com.
+- <b>28. We will need to repeat steps 5-27 again but change the NEW bucket name to www.YOURDOMAIN.com. You should end up with two identical S3 buckets pertaining the index.Html file with the exception of the bucket names. One has www followed by your website YOURDOMAIN.com and one s3 bucket with just your domain.com.
 
 
 
@@ -171,7 +171,7 @@ Project consists of hosting a static website on AWS S3.
 
 One key insight I'd like to share, which would have streamlined the process, involves the setup of S3 buckets. Here's what I would have done differently:
 
-Create Dual S3 Buckets: My approach would have been to establish two S3 buckets, namely WWW.YOURWEBSITE.COM and YOURWEBSITE.COM. Both of these would contain the same index.html web page script. This configuration is crucial for ensuring that these buckets are recognized and correctly linked when setting up alias forwarding in Route 53. It became clear to me, through some trial and error, that if the bucket names don't precisely match the domain name registered in Route 53, they won't appear as intended.
+Create Dual S3 Buckets: My approach would have been to establish two S3 buckets, namely WWW.YOURDOMAIN.COM and YOURDOMAIN.COM. Both of these would contain the same index.html web page script. This configuration is crucial for ensuring that these buckets are recognized and correctly linked when setting up alias forwarding in Route 53. It became clear to me, through some trial and error, that if the bucket names don't precisely match the domain name registered in Route 53, they won't appear as intended.
 This realization came as a pivotal learning moment. Now, equipped with this knowledge, I'm able to more efficiently architect and deploy AWS services in my infrastructure.</b>
 <b> Ok back to the project!</b>
 
@@ -208,7 +208,7 @@ This realization came as a pivotal learning moment. Now, equipped with this know
 <img src="https://i.imgur.com/cLphZix.png" height="40%" width="40%" alt="2 New Records"/>
 <br>
 
-- <b>34. Test the domain by going to your browser and typing in YOURWEBSITE.com and WWW.YOURWEBSITE.COM to make sure it works.</b>
+- <b>34. Test the domain by going to your browser and typing in (YOURWEBSITE.com) and (WWW.YOURDOMAIN.COM) to make sure it works.</b>
 
 <img src="https://i.imgur.com/nnHp2bs.jpg" height="40%" width="40%" alt="All Done"/>
 <br>
@@ -223,7 +223,7 @@ This realization came as a pivotal learning moment. Now, equipped with this know
 <img src="https://i.imgur.com/ZKyVUZZ.png" height="40%" width="40%" alt="Request Public Server"/>
 <br>
 
-- <b>37. In the "Fully qualified domain name box input your "YOURWEBSITE.COM". Click "Add another name to this certificate" and input "*.YOURWEBSITE.COM" the *. allows you to get a certificate for a subdomain (ex:www.YOURWEBSITE.com). Click Request.</b>
+- <b>37. In the "Fully qualified domain name box input your "YOURDOMAIN.COM". Click "Add another name to this certificate" and input "*.YOURDOMAIN.COM" the *. allows you to get a certificate for a subdomain (ex:www.YOURDOMAIN.com). Click Request.</b>
 
 <img src="https://i.imgur.com/wlITCXJ.png" height="40%" width="40%" alt="All Done"/>
 <br>
