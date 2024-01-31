@@ -10,7 +10,9 @@ This project demonstrates the process of hosting a static website on Amazon Web 
 
 - <b>Amazon Route 53 for Domain Management: We use Amazon Route 53 for domain name registration and forwarding. Route 53 serves as a scalable and highly available Domain Name System (DNS) web service, facilitating efficient domain management and routing of end-user requests to the Amazon S3 hosted website.</b>
 
-- </b>CAWS Certificate Manager for Security: To ensure the security of our website, we utilize AWS Certificate Manager for SSL/TLS certificate management. This service allows us to easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services, thereby enabling secure connections to our website.</b>
+- </b>AWS Certificate Manager for Security: To ensure the security of our website, we utilize AWS Certificate Manager for SSL/TLS certificate management. This service allows us to easily provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services, thereby enabling secure connections to our website.</b>
+
+- <b>CloudFront for Distribution: We set up a CloudFront distribution with custom SSL certification from AWS Certificate Manager, ensuring that our website is served securely over HTTPS. The distribution is also linked to our custom domain managed by Amazon Route 53, enabling users to access the website through a friendly URL.
 
 <h2>Integration with Canva for Design Elements</h2>
 <b>In addition to leveraging AWS services, this project also integrates with Canva, a popular online design tool, to enhance the visual appeal and user experience of our static website. By using Canva, we can easily create and customize high-quality graphics, banners, and other visual elements without the need for advanced graphic design skills. This integration highlights the project's emphasis on not only technical functionality but also on aesthetic presentation.
@@ -23,7 +25,15 @@ This project demonstrates the process of hosting a static website on Amazon Web 
 
 - <b>Domain Registration and Management: Showcase the process of domain name registration and DNS management using Amazon Route 53.</b>
 
-- <b>Enhancing Website Security: Implement SSL/TLS encryption for the website using AWS Certificate Manager, ensuring secure communication and data protection.</b> 
+- <b>Enhancing Website Security: Implement SSL/TLS encryption for the website using AWS Certificate Manager, ensuring secure communication and data protection.</b>
+
+- <b>To significantly enhance the global accessibility and speed of our static website, ensuring secure and efficient content delivery with reduced latency for users worldwide.
+
+
+
+
+
+
 
 
 <h2>How to Use This Repository</h2>
