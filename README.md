@@ -1,4 +1,4 @@
-<h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager</h1>
+<h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager | CloudFront</h1>
 
 <h2>Project Overview</h2>
 This project demonstrates the process of hosting a static website on Amazon Web Services (AWS) using three key services: Amazon S3 (Simple Storage Service), Amazon Route 53, and AWS Certificate Manager. The goal of this project is to provide a hands-on experience in deploying a secure and scalable static website on the AWS platform.
