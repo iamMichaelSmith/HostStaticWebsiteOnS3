@@ -1,4 +1,4 @@
-<h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager</h1>
+![image](https://github.com/iamMichaelSmith/HostStaticWebsiteOnS3/assets/150204019/5471ae9a-a527-4f54-9141-4217d7551db6)<h1>Hosting a Static Website using AWS S3 | Route 53 | AWS Certificate Manager</h1>
 
 <h2>Project Overview</h2>
 This project demonstrates the process of hosting a static website on Amazon Web Services (AWS) using three key services: Amazon S3 (Simple Storage Service), Amazon Route 53, and AWS Certificate Manager. The goal of this project is to provide a hands-on experience in deploying a secure and scalable static website on the AWS platform.
@@ -250,12 +250,47 @@ This realization came as a pivotal learning moment. Now, equipped with this know
 
 - <b>40. Repeat step 38 with the other certificate (YOURDOMAIN.COM)</b>
 
-- <b>41. Finally go into your browser and type in your website domain and see you new secured website</b>
+- <b>41. Go into your browser and type in your website domain and see you new secured website</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="All Done"/>
 <br>
 </br>
 
+- <b>42. Back in the AWS "Search bar" search "CloudFront"</b>
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Search CloudFront"/>
+
+- <b>43. On the CloudFront distribution page, click "Create Distribution".
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Create Distribution"/>   
+
+- <b>44. Click in the "Origin Domain" box and select the s3 bucket that has your domain name without the www.
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Origin Domain"/>
+
+- <b>45. In the "Origin Access" section choose "Origin Acces Control Settings" and click "Control Settings"
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Create Control Settings"/>
+
+- <b>46. On the "Create Control Settings" page, make sure "Oregin Type" says "S3" and click "Create".
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Create Control Settings"/>
+
+- <b>47. In the "Viewer Protocol Policy" area select "Redirect HTTP to HTTPS"
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Viewer Protocol Policy"/>
+
+- <b>48. On the "Cache key and origin requests" nsection make sure it says "CacheOptimized".
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="CacheOptimized"/>
+
+- <b>In the "Web Application Firewall (WAF)" nsection, enable "Do not enable security protections"</b>
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="CacheOptimized"/>
+
+- <b>In the "Custom SSL certificate" area, select in the dropdown the AWS certificate tha has you domain name with out the www.</b>
+
+<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="AWS Certificate"/>
 
 
 
