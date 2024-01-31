@@ -268,73 +268,75 @@ This realization came as a pivotal learning moment. Now, equipped with this know
 
 - <b>42. Back in the AWS "Search bar" search "CloudFront"</b>
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Search CloudFront"/>
+<img src="https://i.imgur.com/GSacFKZ.png" height="40%" width="40%" alt="Search CloudFront"/>
 
 
 - <b>43. On the CloudFront distribution page, click "Create Distribution".
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Create Distribution"/>   
+<img src="https://i.imgur.com/SD76lmk.png" height="40%" width="40%" alt="Create Distribution"/>   
 
 
 - <b>44. Click in the "Origin Domain" box and select the s3 bucket that has your domain name without the www.
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Origin Domain"/>
+<img src="https://i.imgur.com/9p97bGz.png" height="40%" width="40%" alt="Origin Domain"/>
 
 
 - <b>45. In the "Origin Access" section choose "Origin Acces Control Settings" and click "Control Settings"
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Create Control Settings"/>
+<img src="https://i.imgur.com/fxyOAk5.png" height="40%" width="40%" alt="Create Control Settings"/>
 
 
 - <b>46. On the "Create Control Settings" page, make sure "Oregin Type" says "S3" and click "Create".
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Create Control Settings"/>
+<img src="https://i.imgur.com/V2Zka55.png" height="40%" width="40%" alt="Create Control Settings"/>
 
 
 - <b>47. In the "Viewer Protocol Policy" area select "Redirect HTTP to HTTPS"
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Viewer Protocol Policy"/>
+<img src="https://i.imgur.com/RWff1lw.png" height="40%" width="40%" alt="Viewer Protocol Policy"/>
 
 
 - <b>48. On the "Cache key and origin requests" nsection make sure it says "CacheOptimized".
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="CacheOptimized"/>
+<img src="https://i.imgur.com/yuj9Kr4.png" height="40%" width="40%" alt="CacheOptimized"/>
 
 
 - <b>49. In the "Web Application Firewall (WAF)" nsection, enable "Do not enable security protections"</b>
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="CacheOptimized"/>
+<img src="https://i.imgur.com/2O8xvIB.png" height="40%" width="40%" alt="CacheOptimized"/>
 
 
 - <b>50. In the "Custom SSL certificate" area, select in the dropdown the AWS certificate tha has you domain name with out the www.</b>
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="AWS Certificate"/>
+<img src="https://i.imgur.com/B2Hoyqc.png" height="40%" width="40%" alt="AWS Certificate"/>
 
 
 - <b>51. In the "Default root object" area, input "index.html"</b>
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="index.html"/>
+<img src="https://i.imgur.com/KxfNzkk.png" height="40%" width="40%" alt="index.html"/>
 
 
 - <b>52. In the header you will see that you need to change the S3 bucket policy to allow CloudFront to read from S3. Click "Copy Policy" and then click "Go to S3 bucket permissions to update policy"</b>
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="index.html"/>
+<img src="https://i.imgur.com/DmdMdLH.png" height="40%" width="40%" alt="index.html"/>
 
 
-- <b>53. In the S3 bucket "Permissions" scroll down to "Bucket Policy" and click "Edit". Erase the existing policy and paste the new policy"</b>
-
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="New Policy"/>
+- <b>53. In the "Block public access" access select " Block all publick access"and click "Seve Changes"</b>
 
 
-- <b>54. Click "Save Changes"</b>
-
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Save Changes"/>
+<img src="https://i.imgur.com/8dwPxMy.png" height="40%" width="40%" alt="Block publick access"/>
 
 
-- <b>55. In the "Block public access" access select " Block all publick access"and click "Seve Changes"</b>
+- <b>54. In the S3 bucket "Permissions" scroll down to "Bucket Policy" and click "Edit". Erase the existing policy and paste the new policy"</b>
+
+<img src="https://i.imgur.com/2IctVjD.png" height="40%" width="40%" alt="New Policy"/>
 
 
-<img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Block publick access"/>
+- <b>55. Click "Save Changes"</b>
+
+<img src="https://i.imgur.com/44gJ4Cm.png" height="40%" width="40%" alt="Save Changes"/>
+
+
 
 - <b>56. Type in your domain Name in the Browser and whitness your website loading much faster.....
 
