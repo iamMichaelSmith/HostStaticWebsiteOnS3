@@ -291,42 +291,42 @@ This realization came as a pivotal learning moment. Now, equipped with this know
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="CacheOptimized"/>
 
 
-- <b>In the "Web Application Firewall (WAF)" nsection, enable "Do not enable security protections"</b>
+- <b>49. In the "Web Application Firewall (WAF)" nsection, enable "Do not enable security protections"</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="CacheOptimized"/>
 
 
-- <b>In the "Custom SSL certificate" area, select in the dropdown the AWS certificate tha has you domain name with out the www.</b>
+- <b>50. In the "Custom SSL certificate" area, select in the dropdown the AWS certificate tha has you domain name with out the www.</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="AWS Certificate"/>
 
 
-- <b>In the "Default root object" area, input "index.html"</b>
+- <b>51. In the "Default root object" area, input "index.html"</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="index.html"/>
 
 
-- <b>In the header you will see that you need to change the S3 bucket policy to allow CloudFront to read from S3. Click "Copy Policy" and then click "Go to S3 bucket permissions to update policy"</b>
+- <b>52. In the header you will see that you need to change the S3 bucket policy to allow CloudFront to read from S3. Click "Copy Policy" and then click "Go to S3 bucket permissions to update policy"</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="index.html"/>
 
 
-- <b>In the S3 bucket "Permissions" scroll down to "Bucket Policy" and click "Edit". Erase the existing policy and paste the new policy"</b>
+- <b>53. In the S3 bucket "Permissions" scroll down to "Bucket Policy" and click "Edit". Erase the existing policy and paste the new policy"</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="New Policy"/>
 
 
-- <b>Click "Save Changes"</b>
+- <b>54. Click "Save Changes"</b>
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Save Changes"/>
 
 
-- <b> In the "Block public access" access select " Block all publick access"and click "Seve Changes"</b>
+- <b>55. In the "Block public access" access select " Block all publick access"and click "Seve Changes"</b>
 
 
 <img src="https://i.imgur.com/b8q6Dz4.png" height="40%" width="40%" alt="Block publick access"/>
 
-- <b> Type in your domain Name in the Browser and whitness your website loading much faster.....
+- <b>56. Type in your domain Name in the Browser and whitness your website loading much faster.....
 
 
 
